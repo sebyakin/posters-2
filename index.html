@@ -16,6 +16,9 @@
     <title>Doc</title>
 </head>
 <body>
+    <div class="preloader">
+        <div>loading is in progress right now...</div>
+    </div>
     <div class="container">
         <div class="popup">
             <p> series 1
@@ -35,7 +38,10 @@
                 <a href="https://instagram.com/sebyakin" target='_blank'>@sebyakin</a>
             </p>
         </div>
-        <div class="float"><p>i</p></div>
+        <div class="info"><p>i</p></div>
+        <div class="tip">
+            <div class="name">open this website in safari browser on an iphone to try these posters in AR</div>
+        </div>
         <div class="ar">
             <div class="model">
             <model-viewer src="models/flag.glb"
@@ -50,12 +56,11 @@
             </model-viewer>
         </div>
         <div class="model">
-            <model-viewer src="models/poster-flat2.glb"
+            <model-viewer src="models/outernet.glb"
             ios-src="models/anim.usdz"
             autoplay
-            auto-rotate
             ar magic-leap
-            exposure="1.2"
+            exposure="0.3"
             interaction-policy='allow-when-focused'
             interaction-prompt='none'
             </model-viewer>
@@ -88,7 +93,10 @@
             <div class="top t-l">
                 <div class="controls">
                     <div class="name">untitled-1</div>
-                    <div class="button">pre-order</div>
+                    <a href="mailto:a.sebyakin@gmail.com?subject=I%want%to buy%a%poster" target="_blank">
+                        <div class="button">pre-order</div></a>
+
+                    
                 </div>
                 <img src="images/untitled.png" alt="">
             </div>

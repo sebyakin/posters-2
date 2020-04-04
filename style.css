@@ -35,7 +35,6 @@ model-viewer {
 
 .name, .button {
     background-color: white;
-    border-radius: 4.167vw;
     /* width: 4.444vw; */
     padding: 0.8vw;
     height: 1.528vw;
@@ -53,6 +52,7 @@ model-viewer {
 }
 
 .button {
+    border-radius: 4.167vw;
     background-color: #FFF500;
 }
 
@@ -123,7 +123,7 @@ img {
     justify-content: center;
 }
 
-.float {
+.info {
     width: 1.528vw;
     height: 1.528vw;
     color: black;
@@ -139,6 +139,7 @@ img {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .float:hover{
@@ -172,4 +173,44 @@ img {
     font-size: 0.694vw;
     text-align: center;
     color: #000;
+}
+
+.tip {
+    position: fixed;
+    top: -3.042vw;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+    opacity: 0;
+}
+
+.tip-show {
+    top: 1.042vw;
+    opacity: 1;
+}
+
+.preloader {
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all ease .3s;
+    font-family: 'Apple Chancery';
+    font-size: 0.694vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.popup>a {
+    text-decoration: underline;
+    color: blue;
 }
