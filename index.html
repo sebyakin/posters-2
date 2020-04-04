@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+    
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <title>Doc</title>
+</head>
+<body>
+    <div class="container">
+        <div class="popup">
+            <p> series 1
+                <br>
+                <br>
+                4 posters made during 
+                2018-2020 by Alexey Sebykain
+                <br>
+                <br>
+                you can pre-order A1 digital prints
+                by clicking ‘pre order’ button.
+                <br>
+                <br>
+                open this website in Safari browser on an iphone to try them in AR
+                <br>
+                <br>
+                <a href="https://instagram.com/sebyakin" target='_blank'>@sebyakin</a>
+            </p>
+        </div>
+        <div class="float"><p>i</p></div>
+        <div class="ar">
+            <div class="model">
+            <model-viewer src="flag.glb"
+            ios-src="anim.usdz"
+            autoplay
+            camera-controls
+            interaction-policy='allow-when-focused'
+            ar magic-leap
+            exposure="0.5"
+            interaction-policy='allow-when-focused'
+            interaction-prompt='none'
+            </model-viewer>
+        </div>
+        <div class="model">
+            <model-viewer src="poster-flat2.glb"
+            ios-src="anim.usdz"
+            autoplay
+            auto-rotate
+            ar magic-leap
+            exposure="1.2"
+            environment-image ="hdr.hdr"
+            interaction-policy='allow-when-focused'
+            interaction-prompt='none'
+            </model-viewer>
+        </div>
+        <div class="model">
+            <model-viewer src="poster-flat3.glb"
+            ios-src="anim.usdz"
+            autoplay
+            auto-rotate
+            ar magic-leap
+            exposure="1.2"
+            environment-image ="hdr.hdr"
+            interaction-policy='allow-when-focused'
+            interaction-prompt='none'
+            </model-viewer>
+        </div>
+        <div class="model">
+            <model-viewer src="poster-flat4.glb"
+            ios-src="anim.usdz"
+            autoplay
+            auto-rotate
+            ar magic-leap
+            exposure="1.2"
+            environment-image ="hdr.hdr"
+            interaction-policy='allow-when-focused'
+            interaction-prompt='none'
+            </model-viewer>
+        </div>
+        </div>
+        <!-- <div class="big-text">Everything</div> -->
+        <div class="left">
+            <div class="top t-l">
+                <div class="controls">
+                    <div class="name">untitled-1</div>
+                    <div class="button">pre-order</div>
+                </div>
+                <img src="/untitled.png" alt="">
+            </div>
+            <div class="bottom b-l">
+                <div class="controls">
+                    <div class="name">outernet</div>
+                    <div class="button">pre-order</div>
+                </div>
+                <img src="/outernet.png" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="top t-r">
+                <div class="controls end">
+                    <div class="name">airy</div>
+                    <div class="button">pre-order</div>
+                </div>
+                <img src="/airy.png" alt="">
+            </div>
+            <div class="bottom b-r">
+                <div class="controls end">
+                    <div class="name">be safe</div>
+                    <div class="button">pre-order</div>
+                </div>
+                <img src="/safe.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer@v0.9.0/dist/model-viewer.js">
+    </script>
+    <script nomodule
+        src="https://unpkg.com/@google/model-viewer@v0.9.0/dist/model-viewer-legacy.js">
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
