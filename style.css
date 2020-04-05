@@ -2,12 +2,17 @@
 
 @font-face {
     font-family: 'Apple Chancery';
-    src: url('fonts/Apple-Chancery.woff2') format('woff2'),
-        url('fonts/Apple-Chancery.woff') format('woff'),
-        url('Apple-Chancery.ttf')  format('truetype');
+    src: url('Apple-Chancery.eot');
+    src: local('Apple Chancery'), local('Apple-Chancery'),
+        url('Apple-Chancery.eot?#iefix') format('embedded-opentype'),
+        url('Apple-Chancery.woff2') format('woff2'),
+        url('Apple-Chancery.woff') format('woff'),
+        url('Apple-Chancery.ttf') format('truetype'),
+        url('Apple-Chancery.svg#Apple-Chancery') format('svg');
     font-weight: 100;
     font-style: italic;
 }
+
 
 * {
     margin: 0;
@@ -289,6 +294,11 @@ a {
     display: none;
 }
 
+.mob {
+    visibility: hidden;
+    display: none;
+}
+
 @media only screen and (max-width: 1045px) {
     .container {
         -webkit-box-orient: vertical;
@@ -386,10 +396,18 @@ a {
     }
 
     .model {
-        height: unset;
+        position: absolute;
+        z-index: 4;
+        height: 50%;
+    }
+
+    .mob {
+    display: flex;
+    visibility: visible;
     }
 
     .ar {
+        visibility: hidden;
         position: absolute;
         overflow: unset;
     }
@@ -399,11 +417,10 @@ a {
     }
 
     .left, .right {
-                flex: unset;
+        flex: unset;
     }
 
     model-viewer {
-        height: 50%;
         --progress-bar-color: #000;
         --progress-bar-height: 1px;
         background-color: unset;
