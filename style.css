@@ -297,6 +297,7 @@ a {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start;
+        height: unset;
     }
 
     .top, .bottom  {
@@ -394,6 +395,8 @@ a {
     }
 
     img {
-        width: 50vh;
+        width: 100%;
     }
-}
+
+    .left, .right {
+                flex: unset;
