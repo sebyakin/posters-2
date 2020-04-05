@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @font-face {
     font-family: 'Apple Chancery';
     src: url('fonts/Apple-Chancery.woff2') format('woff2'),
@@ -8,11 +10,14 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
     /* background-color: rgb(123,255,255); */
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
     transition: .5s all ease;
 }
 
@@ -26,9 +31,12 @@ model-viewer {
 
 .controls {
     height: 3.194vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     width: 50%;
     padding: 1vw;
 }
@@ -38,17 +46,26 @@ model-viewer {
     /* width: 4.444vw; */
     padding: 0.8vw;
     height: 1.528vw;
-    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: 'Apple Chancery';
     font-size: 0.694vw;
     margin-right: 0.208vw;
 }
 
 .end {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .button {
@@ -57,7 +74,8 @@ model-viewer {
 }
 
 .button:hover{
-    box-shadow: 0px 2px 25px #FFF500;
+    -webkit-box-shadow: 0px 2px 25px #FFF500;
+            box-shadow: 0px 2px 25px #FFF500;
     cursor: pointer;
 }
 
@@ -71,9 +89,15 @@ model-viewer {
 
 .model {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -90,24 +114,47 @@ img {
 .container {
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .left, .right {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .top, .bottom  {
     width: 100%;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .info {
@@ -122,15 +169,23 @@ img {
     bottom: 1.042vw;
     border-radius: 50%;
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
 .float:hover{
-    box-shadow: 0px 2px 25px #FFF500;
+    -webkit-box-shadow: 0px 2px 25px #FFF500;
+            box-shadow: 0px 2px 25px #FFF500;
     cursor: pointer;
 }
 
@@ -138,19 +193,29 @@ img {
     width: 17.639vw;
     height: 17.639vw;
     background-color: white;
-    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: fixed;
     z-index: 3;
     padding: 2.500vw;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     /* visibility: hidden; */
     display: none;
 }
 
 .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -166,9 +231,17 @@ img {
     position: fixed;
     top: -3.042vw;
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
     transition: all 0.6s;
     opacity: 0;
 }
@@ -183,10 +256,18 @@ img {
     z-index: 100;
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: white;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
     transition: all ease .3s;
     font-family: 'Apple Chancery';
     font-size: 0.694vw;
@@ -209,14 +290,26 @@ a {
 
 @media only screen and (max-width: 1045px) {
     .container {
-        flex-direction: column;
-        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     .top, .bottom  {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
         overflow: scroll;
     }
 
@@ -225,7 +318,9 @@ a {
     }
 
     .end {
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 
     .controls {
@@ -249,9 +344,15 @@ a {
         visibility: visible;
         height: 50vh;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .info-m>p{
@@ -263,7 +364,9 @@ a {
     }
 
     .tip {
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
     
     .tip-show {
