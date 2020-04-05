@@ -65,10 +65,6 @@ model-viewer {
     position: fixed;
     width: 100%;
     height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     overflow: scroll;
     /* visibility: hidden; */
 }
@@ -80,15 +76,6 @@ model-viewer {
     justify-content: center;
 }
 
-
-model-viewer {
-    /* width: 30%;
-    height: 80vh; */
-    /* background-color: #70BCD1; */
-    --progress-bar-color: #000;
-    --progress-bar-height: 1px;
-      background-color: unset;
-}
 
 img {
     width: 100%;
@@ -213,4 +200,97 @@ a {
 .popup>a {
     text-decoration: underline;
     color: blue;
+}
+
+.info-m {
+    visibility: hidden;
+    display: none;
+}
+
+@media only screen and (max-width: 1045px) {
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .top, .bottom  {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: end;
+        overflow: scroll;
+    }
+
+    .ar{
+        
+    }
+
+    .end {
+        justify-content: flex-start;
+    }
+
+    .controls {
+        padding: 3.200vw;
+        height: unset;
+    }
+
+    .name, .button {
+
+        padding: 4vw;
+        height: 3.194vw;
+        font-size: 2.667vw;
+        margin-right: 1.867vw;
+    }                
+
+    .info {
+        visibility: hidden;
+    }
+
+    .info-m {
+        visibility: visible;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-m>p{
+        font-family: 'Apple Chancery';
+        font-size: 2.667vw;
+        text-align: center;
+        color: #000;
+        padding: 18.667vw;
+    }
+
+    .tip {
+        align-self: center;
+    }
+    
+    .tip-show {
+        top: 3.042vw;
+        opacity: 1;
+    }
+
+    .preloader {
+        font-size: 2.667vw;
+    }
+
+
+    model-viewer {
+        width: 70vw;
+        height: 130vh;
+    }
+
+    .model {
+        height: 50vh;
+    }
+
+    .ar {
+        position: absolute;
+        overflow: unset;
+    }
+
+    img {
+        width: 50vh;
+    }
 }
