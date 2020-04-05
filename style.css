@@ -3,7 +3,8 @@
 @font-face {
     font-family: 'Apple Chancery';
     src: url('fonts/Apple-Chancery.woff2') format('woff2'),
-        url('fonts/Apple-Chancery.woff') format('woff');
+        url('fonts/Apple-Chancery.woff') format('woff'),
+        url('Apple-Chancery.ttf')  format('truetype');
     font-weight: 100;
     font-style: italic;
 }
