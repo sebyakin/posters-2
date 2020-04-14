@@ -299,6 +299,43 @@ a {
     display: none;
 }
 
+.model-mob {
+    display: none;
+}
+
+.t-l {
+    flex: 1;
+    background-image: url("/images/sebyakin-series-untitled.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.b-l {
+    flex: 1;
+    background-image: url("/images/sebyakin-series-outernet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.t-r {
+    flex: 1;
+    background-image: url("/images/sebyakin-series-airy.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.b-r {
+    flex: 1;
+    background-image: url("/images/sebyakin-series-be-safe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 @media only screen and (max-width: 1045px) {
     .container {
         -webkit-box-orient: vertical;
@@ -349,6 +386,7 @@ a {
 
     .info {
         visibility: hidden;
+        display: none;
     }
 
     .info-m {
@@ -391,25 +429,31 @@ a {
 
 
     model-viewer {
-        width: 70vw;
-        height: 130vh;
+        width: 100%;
+        height: 100%;
     }
 
     .model {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .model-wrapper {
         position: absolute;
         z-index: 4;
-        height: 50%;
     }
 
     .mob {
-    display: flex;
-    visibility: visible;
+        display: flex;
+         visibility: visible;
     }
 
     .ar {
         visibility: hidden;
         position: absolute;
         overflow: unset;
+        display: none;
     }
 
     img {
@@ -424,5 +468,19 @@ a {
         --progress-bar-color: #000;
         --progress-bar-height: 1px;
         background-color: unset;
+        height: 50vh;
     }
+
+    .model-mob {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+    }
+
+
+
 }
