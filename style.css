@@ -182,7 +182,7 @@ img {
     font-size: 0.794vw;
     text-align: center;
     position: fixed;
-    bottom: 1.042vw;
+    bottom: 2.142vw;
     border-radius: 50%;
     z-index: 1;
     display: -webkit-box;
@@ -244,7 +244,6 @@ img {
 }
 
 .tip {
-
     position: fixed;
     top: -3.042vw;
     z-index: 1;
@@ -387,26 +386,15 @@ a {
 .frame {
     position: absolute;
     z-index: 10;
-    position: absolute;
-    z-index: 10;
-    top: 2vh;
+    bottom: 0.09vh;
     font-family: 'apple_chancery';
-    font-size: 0.79vw;
+    font-size: 1.5vw;
     color: #FFF500;
     text-shadow:
     -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
-     animation: fade 10s ease alternate infinite;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
 }
 
 
