@@ -38,18 +38,18 @@ window.addEventListener('load', () => {
     let info = document.querySelector('.info');
     let popup = document.querySelector('.popup');
 
-    // info.addEventListener('click', function() {
-    //     popup.classList.toggle('show');
+    info.addEventListener('click', function() {
+        popup.classList.toggle('show');
+    });
+
+    // info.addEventListener('mouseover', function() {
+    //     console.log('jopa');
+    //     popup.classList.add('show');
     // });
 
-    info.addEventListener('mouseover', function() {
-        console.log('jopa');
-        popup.classList.add('show');
-    });
-
-    info.addEventListener('mouseout', function() {
-        popup.classList.remove('show');
-    });
+    // info.addEventListener('mouseout', function() {
+    //     popup.classList.remove('show');
+    // });
 
 });
 

@@ -32,7 +32,7 @@ model-viewer {
     width: 40vw;
     height: 100%;
     --progress-bar-color: #FFF500;
-    --progress-bar-height: 2px;
+    --progress-bar-height: 0px;
     background-color: unset;
 }
 
@@ -48,10 +48,28 @@ model-viewer {
     padding: 1vw;
 }
 
-.name, .button {
-    background-color: white;
-    /* width: 4.444vw; */
-    padding: 0.8vw;
+.name {
+    margin-right: 1vw;
+    font-family: 'apple_chancery';
+    font-size: 1.5vw;
+    color: #FFF500;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    line-height: 1.9vw;
+    
+}
+
+
+.end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.button {
     height: 2vw;
     -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
@@ -65,18 +83,9 @@ model-viewer {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: 'apple_chancery';
-    font-size: 0.794vw;
+    font-size: 0.84vw;
     margin-right: 0.308vw;
     color: rgba(0, 0, 0, 0.9);
-}
-
-.end {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-}
-
-.button {
     border-radius: 4.167vw;
     background-color: #FFF500;
     padding-right: 1vw;
@@ -179,7 +188,7 @@ img {
     color: rgba(0, 0, 0, 0.9);
     background-color: #FFF500;
     font-family: 'apple_chancery';
-    font-size: 0.794vw;
+    font-size: 0.84vw;
     text-align: center;
     position: fixed;
     bottom: 2.142vw;
@@ -286,7 +295,7 @@ img {
     -o-transition: all ease .3s;
     transition: all ease .3s;
     font-family: 'apple_chancery';
-    font-size: 0.794vw;
+    font-size: 1.3vw;
 }
 
 a {
