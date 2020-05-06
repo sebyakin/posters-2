@@ -471,7 +471,7 @@ a {
 
     .info-m {
         visibility: visible;
-        height: 50vh;
+        min-height: 50vh;
         width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -508,6 +508,7 @@ a {
         font-size: 4vw;
         overflow-y: hidden;
         position: fixed;
+        z-index: 100;
     }
 
 
@@ -570,7 +571,7 @@ a {
     }
 
     .controls {
-        z-index: 100;
+        z-index: 5;
     }
 
     .button:hover:after{

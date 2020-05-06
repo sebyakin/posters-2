@@ -1,9 +1,8 @@
 window.addEventListener('load', () => {
 
     let tip = document.querySelector('.tip');
-    let warning = document.querySelectorAll('.warning');
 
-    console.log(warning);
+    console.log(':p');
 
     document.querySelector(".preloader").style.visibility = "hidden";
 
